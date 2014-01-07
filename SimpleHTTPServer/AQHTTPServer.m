@@ -107,7 +107,7 @@
     _serverSocket4.eventHandler = handlerBlock;
     _serverSocket6.eventHandler = handlerBlock;
     
-    _isLocalhost = ([_address caseInsensitiveCompare: @"loopback"] == NSOrderedSame || [_address caseInsensitiveCompare: @"localhost"] == NSOrderedSame);
+    _isLocalhost = ([_address caseInsensitiveCompare: @"loopback"] == NSOrderedSame || [_address caseInsensitiveCompare: @"localhost"] == NSOrderedSame || [_address caseInsensitiveCompare: @"127.0.0.1"] == NSOrderedSame);
     
     if ( [_serverSocket4 listenForConnections: _isLocalhost useIPv6: NO error: error] == NO )
     {
