@@ -4,7 +4,7 @@
 //
 //  Created by Jim Dovey on 12-04-25.
 //  Copyright (c) 2012 Jim Dovey. All rights reserved.
-//
+// Modified by Daniel Weck (2013 Readium SDK)
 
 #import "AQHTTPServer.h"
 #import "AQSocket.h"
